@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main class="game">
+      <div class="score-container">
+        <p class="user">Player: <span> </span></p>
+        <p class="score">Wrong tries: <span>0</span></p>
+      </div>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-inner" data-id="1">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-riding-rocket-space-waving-hand-cartoon-vector-icon-illustration-science-tech_138676-4989.jpg?w=740&t=st=1666050218~exp=1666050818~hmac=b0ce26a2072f7ef666e939281469be28da9d46c16af3c452e3773a2623aad03d"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="1">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-riding-rocket-space-waving-hand-cartoon-vector-icon-illustration-science-tech_138676-4989.jpg?w=740&t=st=1666050218~exp=1666050818~hmac=b0ce26a2072f7ef666e939281469be28da9d46c16af3c452e3773a2623aad03d"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="2">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/astronaut-sitting-planet-waving-hand-cartoon-vector-icon-illustration-science-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3503.jpg?w=740&t=st=1666049866~exp=1666050466~hmac=830f5596e991eebbf32018af1297cb97c00f1d06261054110a33ea4be9435308"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="2">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/astronaut-sitting-planet-waving-hand-cartoon-vector-icon-illustration-science-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3503.jpg?w=740&t=st=1666049866~exp=1666050466~hmac=830f5596e991eebbf32018af1297cb97c00f1d06261054110a33ea4be9435308"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="3">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-playing-baseball-with-moon-cartoon-vector-icon-illustration-science-sports-isolated_138676-6012.jpg?w=740&t=st=1666050409~exp=1666051009~hmac=f9ec872cb97f5dd2718232dfc39fbdf646d2e5491f6bfe75f1c96fd8adf441e5"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="3">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-playing-baseball-with-moon-cartoon-vector-icon-illustration-science-sports-isolated_138676-6012.jpg?w=740&t=st=1666050409~exp=1666051009~hmac=f9ec872cb97f5dd2718232dfc39fbdf646d2e5491f6bfe75f1c96fd8adf441e5"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="4">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-holding-flag-moon-cartoon-vector-icon-illustration-science-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4115.jpg?w=740&t=st=1666049870~exp=1666050470~hmac=30533eaad66780ed73735d836c18ee6c67e1d82b0553bde9ed1688df532140c5"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="4">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-holding-flag-moon-cartoon-vector-icon-illustration-science-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4115.jpg?w=740&t=st=1666049870~exp=1666050470~hmac=30533eaad66780ed73735d836c18ee6c67e1d82b0553bde9ed1688df532140c5"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="5">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-thinking-alien-cartoon-vector-icon-illustration-science-technology-icon-isolated_138676-4482.jpg?w=740&t=st=1666050451~exp=1666051051~hmac=20e32974510a757553f4c9aeac445363160f7a773cb6aeafc31cf6f9f58fcf6c"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="5">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-thinking-alien-cartoon-vector-icon-illustration-science-technology-icon-isolated_138676-4482.jpg?w=740&t=st=1666050451~exp=1666051051~hmac=20e32974510a757553f4c9aeac445363160f7a773cb6aeafc31cf6f9f58fcf6c"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="6">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-reading-book-moon-cartoon-vector-icon-illustration-technology-education-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4200.jpg?w=740&t=st=1666049879~exp=1666050479~hmac=0fc360bcc236213f9d1376222c5086d8d5ed5a6fe4802e732d66fabd902bb825"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="6">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-reading-book-moon-cartoon-vector-icon-illustration-technology-education-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-4200.jpg?w=740&t=st=1666049879~exp=1666050479~hmac=0fc360bcc236213f9d1376222c5086d8d5ed5a6fe4802e732d66fabd902bb825"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="7">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-floating-with-moon-balloon-earth-ice-cream-illustration_138676-3355.jpg?w=740&t=st=1666049882~exp=1666050482~hmac=2bbe950179cce6361d9c40e4164008c6b8237b496745d1e217721b85efe10b40"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="7">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-floating-with-moon-balloon-earth-ice-cream-illustration_138676-3355.jpg?w=740&t=st=1666049882~exp=1666050482~hmac=2bbe950179cce6361d9c40e4164008c6b8237b496745d1e217721b85efe10b40"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="8">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-with-hand-peace-cartoon-space-technology-icon-concept-isolated-flat-cartoon-style_138676-2184.jpg?w=740&t=st=1666049886~exp=1666050486~hmac=5c8b032b827ab23a4105f20ccab79cb7bbdca23d21142617139e8ef868e43ea7"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="8">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-with-hand-peace-cartoon-space-technology-icon-concept-isolated-flat-cartoon-style_138676-2184.jpg?w=740&t=st=1666049886~exp=1666050486~hmac=5c8b032b827ab23a4105f20ccab79cb7bbdca23d21142617139e8ef868e43ea7"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="9">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/astronaut-yoga-with-coffee-cartoon-vector-icon-illustration-science-drink-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3400.jpg?w=740&t=st=1666049899~exp=1666050499~hmac=253ea0a3d40b3b1c1d4afe8c93f107f651fdc43f6c5d067203ece06978b02d48"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="9">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/astronaut-yoga-with-coffee-cartoon-vector-icon-illustration-science-drink-icon-concept-isolated-premium-vector-flat-cartoon-style_138676-3400.jpg?w=740&t=st=1666049899~exp=1666050499~hmac=253ea0a3d40b3b1c1d4afe8c93f107f651fdc43f6c5d067203ece06978b02d48"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="10">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-sitting-ufo-cartoon-vector-icon-illustration-science-technology-icon-isolated-flat_138676-6133.jpg?w=740&t=st=1666050429~exp=1666051029~hmac=9fcdb31a41c6bd29d902660328e45b286c0b3b541f469cddb8b1ea08f96879c1"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner" data-id="10">
+            <div class="card-face"></div>
+            <div class="card-back">
+              <img
+                src="https://img.freepik.com/free-vector/cute-astronaut-sitting-ufo-cartoon-vector-icon-illustration-science-technology-icon-isolated-flat_138676-6133.jpg?w=740&t=st=1666050429~exp=1666051029~hmac=9fcdb31a41c6bd29d902660328e45b286c0b3b541f469cddb8b1ea08f96879c1"
+                alt="pic"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="start-layer">
+        <button class="start-btn">Play</button>
+      </div>
+    </main>
+  </body>
+</html>

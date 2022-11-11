@@ -1,0 +1,7 @@
+- user & score 
+- game & cards
+- start button 
+- flip card on click
+  -> if the flipped cards has the same picture keep them showed up and add them correct array and don't change the score 
+
+  -> if the flipped cards are not the same flip them back and increase the score by one
